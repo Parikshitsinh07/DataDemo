@@ -1,0 +1,3 @@
+Example of create files using python and use of read and write mode
+
+Example of appende mode
