@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    display: flex;
+}
+#up{
+    margin-bottom: 10px;
+}
+#down{
+    margin-top: 10px;
+}
+.hero > div{
+    
+}

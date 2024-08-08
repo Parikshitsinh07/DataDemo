@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #eeeeee;
+}
+nav{
+    margin: 10px 0px;
+    display: flex;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+nav > img{
+    width: 5vw;
+    height: 5vh;
+}
+ul {
+    display: flex;
+    width: 40%;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+nav > span{
+    background-color: #00e0ff21;
+    color: #00c0ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+#hero{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.Box{
+    width:40% ;
+    height: 80%;
+    padding-left: 6%;
+}
+#Left > h2{
+    font-size: 2.7rem;
+}
+#Left >span{
+    font-size: 3rem;
+    color: aqua;
+}
+#Left > button{
+    margin: 3vh 0vw;
+    color:white;
+    padding: 3vh 3vw;
+    border-radius: 10px;
+    background-color: #00b8ffe8;
+} 
+#Left > p{
+    padding-right: 72px;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+
+
+/* media  query for Tablet*/
+@media screen and (max-width: 768px) {
+    #Left > h2{
+        font-size: 1.8rem;
+    }
+    #Left >span{
+        font-size: 2rem;
+        color: aqua;
+    }
+    #Left > button{
+        margin: 3vh 0vw;
+        color:white;
+        padding: 3vh 3vw;
+        border-radius: 10px;
+        background-color: #00b8ffe8;
+    } 
+    #Left > p{
+        padding-right: 0px;
+        font-size: 1.1rem;
+        color: gray;
+    }
+
+   
+}
+/* media  query for Mobile*/
+@media screen and (max-width: 430px) {
+    nav > span{
+        background-color: #00e0ff21;
+        color: #00c0ff;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    ul{
+        display:none;
+    }
+    #hero{
+        flex-wrap: wrap;  
+                
+    }
+    .Box{
+        width: 425px;
+        overflow:hidden;
+    }
+    #Left > p{
+        font-size: 1rem;
+        word-wrap: break-word;
+    }
+    #Right{
+        text-align: center;
+       
+    }
+}

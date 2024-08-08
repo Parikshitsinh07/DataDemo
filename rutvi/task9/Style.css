@@ -1,0 +1,118 @@
+
+   *{
+    margin:0%;
+   }
+    .navbar li{
+        /* float:inline-start; */
+        list-style:none;
+        margin-top:10px; 
+        margin-bottom: 30px;
+        margin-right:70px;
+        padding: 20px;
+        display: inline;
+        position: relative;
+        left:120px;
+        font-size: 20px;
+    }
+    .navbar{
+        text-decoration: none;
+        color: gray;
+        padding: 30px;
+    }
+.img{
+      height:80px;
+      width:80px; 
+      float:left;
+      margin-top:2px;
+      margin-left:20px;
+      margin-right:50px ;
+      display:inline-block;
+}
+#btn{
+    border-radius:10px ;
+    border: none;
+    float:right;
+    background-color: #DEEFF5;
+    color: #4BAAC8;
+    margin-top:-20px;
+    margin-right:40px;
+    margin-left:60px ;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:1%;
+    padding-right:1%;
+    font-size:16px;
+}
+/* Hero section */
+.float-parent-element { 
+    width:64%;
+    display:flex;
+    margin-right:30px;
+    display: inline-block; 
+} 
+.float-child-element { 
+    float:left; 
+    width:50%; 
+    margin-top:10%;
+} 
+.red { 
+    margin-top:100px;
+    margin-right:-40px; 
+    margin-left:-70px;
+    width:3px;
+    font-size:40px;
+    display:inline;
+} 
+.yellow:hover{ 
+    margin-top:-50px;
+    display:inline;
+    margin-left:190px;
+    margin-right:170px;
+    height:320px;
+    animation-name:slide-in;
+    animation-duration:8s;
+    animation-iteration-count:2;
+    animation-direction:reverse; 
+}
+/* .yellow:hover{   
+     animation-name:circle;
+    animation-duration:inherit;
+    animation-iteration-count:2;
+    animation-direction:reverse;
+} */
+.h2{
+      margin-top:0px;
+      margin-left:-70px;
+      color:blue;
+      font-size:40px;
+}
+p{
+    margin-left:-70px;
+    font-size:21px;
+}
+#bb{
+    border-radius:9px;
+    border: none;
+    padding-top:12px;
+    padding-left: 15px;
+    padding-right: 18px;
+    padding-bottom:12px;
+    color:white;
+    margin-top:20px;
+    background-color:rgb(0, 187, 255);
+}
+@keyframes slide-in{
+    0%,100%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(40px,10px);
+    }
+    50%{
+        transform: translate(40px,10px);
+    }
+    75%{
+        transform: translate(10px,40px);
+    }
+
+}

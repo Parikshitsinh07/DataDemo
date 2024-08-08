@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <form action="calculator" onsubmit="return validateForm()">
+            <table>
+                <tr colspan="2">
+                    <th align="center" colspan="2">Count Compound Interest</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>principal amount: <span>₹</span></label>
+                        <input type="text" name="amout" id="amount" />
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Interest Rate: <span>%</span></label>
+                        <input type="text" name="rate" id="rate" />
+                        <br>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label>years:</label>
+                        <input type="text" name="year" id="year" />
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Months:</label>
+                        <input type="text" name="month" id="month" />
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>compound interest:</label>
+                        <select name="ci" id="ci" required>
+                            <option value="Daily(365/yar)">Daily(365/yar)</option>
+                            <option value="Daily(360/yar)">Daily(360/yar)</option>
+                            <option value="Weekly(52/yr)">Weekly(52/yr)</option>
+                            <option value="Weekly(26/yr)">Weekly(26/yr)</option>
+                            <option value="Half Monthly(24/yr)">Half Monthly(24/yr)</option>
+                            <option value="Monthly(12/yr)">Monthly(12/month)</option>
+                            <option value="Monthly(6/yr)">Monthly(6/month)</option>
+                            <option value="Quarterly">Quarterly(4/month)</option>
+                            <option value="Half Yearly(2/yr)">Half Yearly(2/month)</option>
+                            <option value="Yearly(1/yr)">Yearly(1/month)</option>
+
+                        </select>
+                        <!-- comment <input type="text" name="interast" id="interast"/>-->
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="submit" name="submit">submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            function validateForm() {
+                var amount = document.getElementById("amount").value;
+                var rate = document.getElementById("rate").value;
+                var year = document.getElementById("year").value;
+                var month = document.getElementById("month").value;
+                var interest = document.getElementById("ci").value;
+
+                if (amount === "" || isNaN(amount) || parseFloat(amount) <= 0) {
+                    alert("Please enter a valid positive principal amount");
+                    return false;
+                }
+                if (rate === "" || parseFloat(rate) <= 0) {
+                    alert("Please enter a valid interest rate greater than zero");
+                    return false;
+                }
+                if (year === "" || isNaN(year) || year < 0) {
+                    alert("Please enter a valid number of years");
+                    return false;
+                }
+                if (month === "" || isNaN(month) || parseInt(month) < 0 || parseInt(month) > 11) {
+                    alert("Please enter a number of months between 0 and 1");
+                    return false;
+                }
+                if (interest === "") {
+                    alert("Please enter a valid compound interest");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images.jpeg" alt="Logo">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+        <span>user's name </span>
+        <!-- Hamburger menu icon -->
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div id="Left" class="Box">
+            <h2>Revitalize Your<br> Clothes with Expert</h2>
+            <span>Laundry Services!</span>
+            <p>From Premium dry cleaning to swift wash and fold , we deliver care and convenience. Schedule a pickup and
+                rediscover the freshness of your Clothes Today !</p>
+            <button>Book a Service Today</button>
+        </div>
+        <div id="Right" class="Box">
+            <img src="imag.png" alt="img">
+        </div>
+    </section>
+    <!-- Hidden menu -->
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu');
+            const body = document.querySelector("body");
+            // Toggle menu visibility when the menu icon is clicked
+            menu.addEventListener('click', function () {
+                if (menu.classList.contains('open')) {
+                    menu.classList.remove('open');
+                }
+            });
+            menuIcon.addEventListener('click', function () {
+                menu.classList.toggle('open');
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

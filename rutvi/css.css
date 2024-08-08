@@ -1,0 +1,75 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Box{
+    width: 50%;
+    height: 100vh;
+ 
+}
+.left{
+
+    background-color:#eeeeee;
+    text-align: center;
+    align-content: center;
+}
+.perent{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+         
+} 
+#img{
+    height: 65vh;
+    width: 35vw;
+}
+
+.right > h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 25vh 0px 5px 0px;
+}
+.right > #h3{
+    text-align: center;
+    text-justify: auto;
+    font-style: italic;
+}
+input[type="email"],input[type="password"]{
+    display: block;
+    padding: 10px;
+    width: 70%;
+    margin: 0px auto;
+    background-color: white;
+}
+label{
+    margin-left: 13%;
+}
+span{
+    display: block;
+    margin-left: 70%;
+
+}
+input[type="submit"]{
+    width: 70%;
+    display: block;
+    margin: 3% auto;
+    padding: 2%;
+    background-color: rgb(62, 138, 237);
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#register{
+    color: rgb(38, 153, 236);
+}
+p{
+    text-align: center;
+}

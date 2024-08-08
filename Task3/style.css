@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    margin: 10vw 25vw;
+}
+img{
+    display: block;
+    width: 50vw;
+    height: 50vh;
+    box-sizing: border-box;
+}
+button {
+    position:fixed;
+    display: block;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 10vh;
+    border: none;
+    color: white;
+    background:linear-gradient(rgb(181, 176, 23),rgb(51, 166, 9));
+}
