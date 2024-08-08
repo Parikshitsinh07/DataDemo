@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="admin.php" method="post">
+
+        <label for="book_img">Book Image URL:</label>
+        <input type="text" id="book_img" name="book_img"><br>
+
+        <label for="book_name">Book Name:</label>
+        <input type="text" id="book_name" name="book_name"><br>
+
+        <label for="book_price">Book Price:</label>
+        <input type="text" id="book_price" name="book_price"><br>
+
+        <label for="book_category">Book Category:</label>
+        <input type="text" id="book_category" name="book_category"><br>
+
+        <label for="book_page">Book Page URL:</label>
+        <input type="text" id="book_page" name="book_page"><br>
+
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
